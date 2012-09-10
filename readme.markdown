@@ -16,6 +16,27 @@ var server = http.createServer(function (req, res) {
 server.listen(8000);
 ```
 
+***
+
+```
+$ nc localhost 8000
+GET / HTTP/1.1
+Upgrade: true
+
+HTTP/1.1 200 OK
+Date: Sun, 09 Sep 2012 23:57:43 GMT
+Connection: close
+
+# repl party server
+> 1+2
+3
+> 'abc'
+'abc'
+> 4+5+2*5
+19
+> ^C
+```
+
 # hypothesis
 
 Emitting an `'upgrade'` event with `(request, socket, head)` parameters makes
