@@ -1,0 +1,36 @@
+{
+    "name" : "http-noupgrade",
+    "version" : "0.0.0",
+    "description" : "merge upgrade requests back into the request listener",
+    "main" : "index.js",
+    "bin" : {},
+    "directories" : {
+        "example" : "example",
+        "test" : "test"
+    },
+    "dependencies" : {},
+    "devDependencies" : {
+        "tap" : "~0.3.0"
+    },
+    "scripts" : {
+        "test" : "tap test/*.js"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/substack/http-noupgrade.git"
+    },
+    "homepage" : "https://github.com/substack/http-noupgrade",
+    "keywords" : [
+        "http",
+        "server",
+        "experiment",
+        "upgrade",
+        "request"
+    ],
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    },
+    "license" : "MIT"
+}
