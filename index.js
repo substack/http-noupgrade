@@ -16,9 +16,9 @@ exports.createServer = function (cb) {
         });
         res.useChunkedEncodingByDefault = false;
         
-        socket.on('data', function (buf) {
-            req.emit('data', buf);
-        });
+        socket.on('data', function (buf) { req.emit('data', buf) });
+        socket.on('end', function () { req.emit('end') });
+        
         server.emit('request', req, res);
         
         if (head.length) req.emit('data', head);
