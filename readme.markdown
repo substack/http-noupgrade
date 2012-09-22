@@ -2,6 +2,8 @@
 
 merge `'upgrade'` requests back into the `'request'` listener
 
+[![build status](https://secure.travis-ci.org/substack/http-noupgrade.png)](http://travis-ci.org/substack/http-noupgrade)
+
 # example
 
 ``` js
