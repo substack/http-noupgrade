@@ -58,6 +58,11 @@ adequately describe the actual http protocol in the case of an upgrade, we
 should just let the `'request'` listener handle `'upgrade'` events instead of
 using a separate event.
 
+# methods
+
+The http-noupgrade api is identical to the core http api except that the
+`upgrade` event has been merged into the `request` event.
+
 # install
 
 With [npm](https://npmjs.org) do:
