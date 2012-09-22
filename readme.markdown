@@ -57,3 +57,15 @@ duplex connection, have well-understood and expected semantics, and more
 adequately describe the actual http protocol in the case of an upgrade, we
 should just let the `'request'` listener handle `'upgrade'` events instead of
 using a separate event.
+
+# install
+
+With [npm](https://npmjs.org) do:
+
+```
+npm install http-noupgrade
+```
+
+# license
+
+MIT
